@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    background-color:blue;
+    overflow: hidden;
+}
+.gamecontainer{
+background-color: aquamarine;
+background-image: url(UNIVERSITY.webp);
+background-repeat: no-repeat;
+width: 100%;
+height: 100vh;
+background-size: 100vw 100vh;
+}
+.student{
+    background-image: url(stud1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 130px;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+}
+.fail
+{
+    background-image: url(FAIL.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 120px;
+    bottom: 0;
+    position: absolute;
+    right: 100px;
+}
+.gameover{
+    visibility: hidden;
+    position: relative;
+    top : 50px;
+    font-size: xx-large;
+    text-align: center;
+    font-style: initial;
+}
+
+.animatestudent{
+animation: stud1 0.9s linear;
+}
+@keyframes stud1{
+    0%{bottom: 0;}
+    50%{
+        bottom: 455px;
+        background-image: url(down.png);
+    }
+    100%{
+bottom: 0;
+
+    }
+}
+.animatefail{
+    animation: FAIL 2s linear infinite;
+}
+@keyframes FAIL {
+    0%
+    {
+        left:100vw;
+    }
+    100%
+    {
+        left:-10vw;
+        /*background-image: url(restart.png);*/
+    }
+
+    
+}
