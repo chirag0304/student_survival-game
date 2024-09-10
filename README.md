@@ -1,3 +1,8 @@
+How to Run
+          Include the JavaScript code in a script tag or external JS file.
+          Create corresponding HTML elements for the player (stud), the failure object (fail), and the game over message (gameover).
+          Add necessary CSS, including the animation for the stud and fail objects.
+          Launch the HTML file in a browser to play the game.
 Game Description
           This code is part of a simple student life-themed browser game. 
           The player controls a character (represented by an HTML element with the ID "stud") that moves left, right, or jumps up using keyboard arrow keys. 
